@@ -567,7 +567,9 @@
       <script>
         function loadYT() {
           const player = document.getElementById('yt-player');
-          player.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/sd6K0Xiqi1Q?autoplay=1&rel=0" title="NaviCare Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border:none;display:block;width:100%;height:100%;"></iframe>';
+          /* position:relative + absolute iframe = reliable 16/9 fill */
+          player.style.position = 'relative';
+          player.innerHTML = '<iframe src="https://www.youtube.com/embed/sd6K0Xiqi1Q?autoplay=1&rel=0" title="NaviCare Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:none;display:block;"></iframe>';
         }
       </script>
     </div>
@@ -713,7 +715,7 @@
     <div class="section-inner">
       <p class="section-label">Check It Out</p>
       <h2 class="section-title">Try NaviCare Yourself</h2>
-      <p class="section-desc">You can open the actual app, watch our demo video, or look at the code. We built it all ourselves so feel free to check it out.</p>
+      <p class="section-desc">You can watch our demo video, look at the code, or download the site. Please feel free to check it out.</p>
       <div class="links-row">
         <a class="link-card btn" href="https://www.youtube.com/watch?v=sd6K0Xiqi1Q" target="_blank">
           ▶ Watch on YouTube
@@ -726,7 +728,7 @@
       <div style="margin-top:60px; padding-top:40px; border-top: 1px solid rgba(255,255,255,.12);">
         <p class="section-label" style="color:#a0b8ff">Quick Note</p>
         <p style="color:rgba(255,255,255,.5); font-size:.88rem; max-width:580px; line-height:1.7;">
-          The Health Guide page is just a prototype we made for the demo — it's not real medical advice and shouldn't be used that way. We put a warning inside the app too so nobody gets confused about that.
+          The Health Guide page is a prototype we made for the demo — it's not real medical advice and should not be used as such. We have added a disclaimer on the website to inform users.
         </p>
       </div>
     </div>
