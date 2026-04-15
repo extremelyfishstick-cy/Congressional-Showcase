@@ -280,15 +280,21 @@
     }
     .feat-card:hover { transform: scale(1.035); box-shadow: 0 14px 42px rgba(33,32,86,.18); }
     .feat-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
-      background: var(--soft);
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 22px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 18px;
-      font-size: 1.5rem;
+      background: transparent;
+    }
+
+    .feat-icon img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      display: block;
+      mix-blend-mode: multiply;
     }
     .feat-card h3 {
       font-family: 'DM Serif Display', serif;
@@ -586,24 +592,20 @@
 
       <div class="features-grid">
         <div class="feat-card">
-          <div class="feat-icon">🏠</div>
-          <h3>Home</h3>
+          <div class="feat-icon"><img src="home butt-01.png" alt="Home" /></div>
           <p>This is the main page. It shows health news and articles pulled from places like the CDC and WHO. There's a slideshow at the top with some of the latest articles and info cards at the bottom you can click on as well.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-icon">📅</div>
-          <h3>Health Hub</h3>
+          <div class="feat-icon"><img src="healthhubbutt-01.png" alt="Health Hub" /></div>
           <p>This is where you can see your upcoming doctor appointments. Each one shows the date, time, location, and if you click "more details" it gives you extra stuff like what to bring or how to prepare.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-icon">💬</div>
-          <h3>Health Guide</h3>
-          <p>This page has a chat-style assistant that asks you questions and helps you determine whether or not you should see a doctor, and can help you book an appointment. It's a prototype and is not a sustitute for real medical advice — we made sure to add a disclaimer regarding that.</p>
+          <div class="feat-icon"><img src="health guide butt-01.png" alt="Health Guide" /></div>
+          <p>This page has a chat-style assistant that asks you questions and helps you determine whether or not you should see a doctor, and can help you book an appointment. It's a prototype and is not a sustitute for real medical advice — we made sure to put a disclaimer regarding that that.</p>
         </div>
         <div class="feat-card">
-          <div class="feat-icon">👤</div>
-          <h3>Profile</h3>
-          <p>Here you can see and edit your personal info like your name, birthday, address, phone number, insurance, doctor's name, and billing info. You click Edit to change those areas and Save when you're done.</p>
+          <div class="feat-icon"><img src="myaccbutt-01.png" alt="My Account" /></div>
+          <p>This is the Profile page. Here you can see and edit your personal info like your name, birthday, address, phone number, insurance, doctor's name, and billing info. You click Edit to change those areas and Save when you're done.</p>
         </div>
       </div>
     </div>
@@ -715,7 +717,7 @@
     <div class="section-inner">
       <p class="section-label">Check It Out</p>
       <h2 class="section-title">Try NaviCare Yourself</h2>
-      <p class="section-desc">You can watch our demo video, look at the code, or download the site. Please feel free to check it out.</p>
+      <p class="section-desc">You can open the actual app, watch our demo video, or look at the code. We built it all ourselves so feel free to check it out.</p>
       <div class="links-row">
         <a class="link-card btn" href="https://www.youtube.com/watch?v=sd6K0Xiqi1Q" target="_blank">
           ▶ Watch on YouTube
@@ -728,7 +730,7 @@
       <div style="margin-top:60px; padding-top:40px; border-top: 1px solid rgba(255,255,255,.12);">
         <p class="section-label" style="color:#a0b8ff">Quick Note</p>
         <p style="color:rgba(255,255,255,.5); font-size:.88rem; max-width:580px; line-height:1.7;">
-          The Health Guide page is a prototype we made for the demo — it's not real medical advice and should not be used as such. We have added a disclaimer on the website to inform users.
+          The Health Guide page is just a prototype we made for the demo — it's not real medical advice and shouldn't be used that way. We put a warning inside the app too so nobody gets confused about that.
         </p>
       </div>
     </div>
